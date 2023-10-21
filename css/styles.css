@@ -18,7 +18,11 @@ h1 {
     color: #ff8212;
 }
 
-h4 {
+h2 {
+    color: #949494;
+}
+
+h3 {
     color: #949494;
 }
 
@@ -132,6 +136,11 @@ button:hover {
     cursor: pointer;
 }
 
+iframe {
+    border-radius: 5px;
+    margin: 10px;
+}
+
 /*footer*/
 footer{
     width: 100%;
@@ -143,34 +152,33 @@ footer{
     margin-bottom: 0px;
 }
 
+footer p {
+    margin: 0px;
+}
+
 .socialmedia:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-.contacto {
-    margin: 20px;
-}
-
-.contacto p {
-    color: #949494;
-    margin: 0px;
-}
-
-.emails {
+.footer-information {
     width: 100%;
     border-top: 1px solid #C822FF;
     border-bottom: 1px solid #C822FF;
     background-color: #111111;
     margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
-.emails2 {
+.contact {
+    margin: 20px;
+}
+
+.emails {
     margin: 30px;
-}
-
-.emails2 p {
-    margin: 0px;
 }
 
 /* Estilos adicionales para dispositivos móviles */
