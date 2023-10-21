@@ -1,0 +1,87 @@
+body {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 50%, rgba(22,22,22,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 50%, rgba(22,22,22,1) 100%);
+    background: linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 50%, rgba(22,22,22,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#161616",GradientType=1);
+}
+
+h5 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    border-radius:50%;
+    z-index:100;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.socialmedia:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.emails {
+    width: 100%;
+    border-top: 1px solid #C822FF;
+    margin-top: 10px;
+}
+
+.emails2 {
+    margin: 20px;
+}
+
+.emails2 p {
+    margin: 0px;
+}
