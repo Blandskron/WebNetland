@@ -18,6 +18,10 @@ h1 {
     color: #ff8212;
 }
 
+h4 {
+    color: #949494;
+}
+
 p {
     color: white;
 }
@@ -92,6 +96,21 @@ blockquote {
     z-index: 1;
 }
 
+button {
+    background-color: #616161;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100px;
+    border: 1px solid;
+    color: #ffc107;
+}
+
+button:hover {
+    background-color: #ffbf00;
+    border: 1px solid #ffc107;
+    color: #111111;
+}
+
 /*Whatsapp*/
 .whatsapp {
     position:fixed;
@@ -129,14 +148,25 @@ footer{
     cursor: pointer;
 }
 
+.contacto {
+    margin: 20px;
+}
+
+.contacto p {
+    color: #949494;
+    margin: 0px;
+}
+
 .emails {
     width: 100%;
     border-top: 1px solid #C822FF;
+    border-bottom: 1px solid #C822FF;
+    background-color: #111111;
     margin-top: 10px;
 }
 
 .emails2 {
-    margin: 20px;
+    margin: 30px;
 }
 
 .emails2 p {
