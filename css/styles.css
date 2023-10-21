@@ -4,10 +4,18 @@ body {
     background: -webkit-linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 50%, rgba(22,22,22,1) 100%);
     background: linear-gradient(90deg, rgba(22,22,22,1) 0%, rgba(0,0,0,1) 50%, rgba(22,22,22,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#161616",endColorstr="#161616",GradientType=1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-h5 {
-    color: white;
+header {
+    width: 100%;
+}
+
+h1 {
+    color: #ff8212;
 }
 
 p {
@@ -20,6 +28,7 @@ main {
     align-items: center;
 }
 
+/*carousel*/
 .carousel {
     display: flex;
     justify-content: center;
@@ -38,6 +47,52 @@ main {
     height: auto;
 }
 
+/*grid promociones*/
+.promotion {
+    margin: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.grid-item:hover {
+    background-color: #535353;
+    border-radius: 10px;
+}
+
+blockquote {
+    border-radius: 10px;
+}
+
+.info {
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #616161;
+    border: 1px solid #ff8212;
+    padding: 10px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*Whatsapp*/
 .whatsapp {
     position:fixed;
     width:60px;
@@ -58,7 +113,9 @@ main {
     cursor: pointer;
 }
 
+/*footer*/
 footer{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,4 +141,30 @@ footer{
 
 .emails2 p {
     margin: 0px;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 1150px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambiamos a una sola columna en dispositivos móviles */
+    }
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Cambiamos a una sola columna en dispositivos móviles */
+    }
+    
+    .grid-item {
+        text-align: left; /* Alineamos el texto a la izquierda en dispositivos móviles */
+    }
+    
+    .info {
+        position: static; /* Cambiamos la posición de info para que aparezca debajo en dispositivos móviles */
+        display: block;
+        width: auto;
+        border: none;
+        padding: 10px;
+    }
 }

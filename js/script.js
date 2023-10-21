@@ -22,3 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
   // Llama a autoChangeSlide cada 1000 milisegundos (2.5 segundo)
   setInterval(autoChangeSlide, 2500);
 });
+
+
+function toggleInfo(element) {
+    const info = element.querySelector('.info');
+    if (info.style.display === 'block') {
+        info.style.display = 'none';
+    } else {
+        info.style.display = 'block';
+    }
+}
