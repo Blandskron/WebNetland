@@ -173,6 +173,10 @@ footer p {
     flex-direction: row;
 }
 
+.footer-information:hover {
+    transition: all .3s ease-in-out;
+}
+
 .contact {
     margin: 20px;
 }
