@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NetlandPC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/icons/favicon.ico">
@@ -39,8 +41,6 @@
                             <li><a class="dropdown-item" href="allinone.html">All In One</a></li>
                             <li><a class="dropdown-item" href="monitores.html">Monitores</a></li>
                             <li><a class="dropdown-item" href="proyectores.html">Proyectores</a></li>
-                            <li><a class="dropdown-item" href="equiposkit.html">Equipos en Kit</a></li>
-                            <li><a class="dropdown-item" href="tarjetadevideo.html">Tarjeta de Video</a></li>
                             <li><a class="dropdown-item" href="accesorios.html">Accesorios</a></li>
                             <li><a class="dropdown-item" href="bicicletas.html">Bicicletas</a></li>
                         </ul>
@@ -53,105 +53,96 @@
 
     <!--Carusel de fotos-->
     <main>
-        <div class="carousel">
-            <div class="slide">
-                <img src="../img/imgPortadas/2.png" alt="Imagen proyector">
-            </div>
-        </div>
+        <img src="../img/imgPortadas/2.png" alt="Imagen proyector" style="width: 90%;">
     </main>
 
     <br>
-    <h1>COMPUTADORES</h1>
+    <h1>ACCESORIOS</h1>
 
-    <!--Promociones-->
-    <div class="promotion">
-        <div class="grid">
-            <div class="grid-item" onclick="toggleInfo(this)">
-
-                 <!--Proyector imagen 1-->
-                <img class="productos" src="../img/computadores/computadores1.jpeg" alt="proyector">
-                <!--Descripcion-->
-                <div class="description">
-                    <p>HP Compaq Elite</p>
-                    <p>$99.000</p>
-                    <p>Intel Core I5</p>
-                    <p>3.10Ghz - 2400</p>
-                    <p>Ram DDR3 - 8Gb</p>
-                    <p>Disco Duro 500Gb</p>
+    <div class="container">
+        <div class="product-grid">
+            <!--Producto 1-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta3.jpeg" alt="Producto 1 Imagen 2"></div>
                 </div>
-                <p>Compraquí <img src="../img/icons/flechaabajo.png" alt="flecha"></p>
-
-
-                <div class="info">
-                    <p>Para adquisiciones de más de dos computadoras, le invitamos a ponerse en contacto con nosotros a través de WhatsApp.</p>
-                    <a href="////" target="_blank"><button class="button">Comprar</button></a>
-                </div>
+                <div class="product-title">Producto 1</div>
+                <div class="product-price">$19.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
             </div>
-            <div class="grid-item" onclick="toggleInfo(this)">
 
-                <!--Proyector imagen 2-->
-                <img class="productos" src="../img/computadores/computadores1.jpeg" alt="proyector">
-                <!--Descripcion-->
-                <div class="description">
-                    <p>HP Compaq Elite</p>
-                    <p>$99.000</p>
-                    <p>Intel Core I5</p>
-                    <p>3.10Ghz - 2400</p>
-                    <p>Ram DDR3 - 8Gb</p>
-                    <p>Disco Duro 500Gb</p>
+            <!--Producto 2-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta4.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
                 </div>
-                <p>Compraquí <img src="../img/icons/flechaabajo.png" alt="flecha"></p>
-
-
-                <div class="info">
-                    <p>Para adquisiciones de más de dos computadoras, le invitamos a ponerse en contacto con nosotros a través de WhatsApp.</p>
-                    <a href="/////" target="_blank"><button class="button">Comprar</button></a>
-                </div>
+                <div class="product-title">Producto 2</div>
+                <div class="product-price">$24.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
             </div>
-            <div class="grid-item" onclick="toggleInfo(this)">
 
-                <!--Proyector imagen 3-->
-                <img class="productos" src="../img/computadores/computadores2.jpeg" alt="proyector">
-                <!--Descripcion-->
-                <div class="description">
-                    <p>HP Pro 4300</p>
-                    <p>$129.000</p>
-                    <p>Intel Core I7</p>
-                    <p>3.10Ghz - 3770s</p>
-                    <p>Ram DDR3 - 8Gb</p>
-                    <p>Disco Solido 240Gb</p>
+            <!--Producto 3-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta4.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
                 </div>
-                <p>Compraquí <img src="../img/icons/flechaabajo.png" alt="flecha"></p>
-
-
-                <div class="info">
-                    <p>Para adquisiciones de más de dos computadoras, le invitamos a ponerse en contacto con nosotros a través de WhatsApp.</p>
-                    <a href="/////" target="_blank"><button class="button">Comprar</button></a>
-                </div>
+                <div class="product-title">Producto 2</div>
+                <div class="product-price">$24.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
             </div>
-            <div class="grid-item" onclick="toggleInfo(this)">
 
-                <!--Proyector imagen 4-->
-                <img class="productos" src="../img/computadores/computadores2.jpeg" alt="proyector">
-                <!--Descripcion-->
-                <div class="description">
-                    <p>HP Pro 4300</p>
-                    <p>$129.000</p>
-                    <p>Intel Core I7</p>
-                    <p>3.10Ghz - 3770s</p>
-                    <p>Ram DDR3 - 8Gb</p>
-                    <p>Disco Solido 240Gb</p>
+            <!--Producto 4-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta4.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
                 </div>
-                <p>Compraquí <img src="../img/icons/flechaabajo.png" alt="flecha"></p>
-
-
-                <div class="info">
-                    <p>Para adquisiciones de más de dos computadoras, le invitamos a ponerse en contacto con nosotros a través de WhatsApp.</p>
-                    <a href="/////" target="_blank"><button class="button">Comprar</button></a>
-                </div>
+                <div class="product-title">Producto 2</div>
+                <div class="product-price">$24.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
             </div>
+
+            <!--Producto 5-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta4.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
+                </div>
+                <div class="product-title">Producto 2</div>
+                <div class="product-price">$24.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
+            </div>
+
+            <!--Producto 6-->
+            <div class="product">
+                <div class="owl-carousel">
+                    <div class="item"><img src="../img/bicicletas/bicicleta4.jpeg" alt="Producto 1 Imagen 1"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta1.jpeg" alt="Producto 1 Imagen 2"></div>
+                    <div class="item"><img src="../img/bicicletas/bicicleta2.jpeg" alt="Producto 1 Imagen 2"></div>
+                </div>
+                <div class="product-title">Producto 2</div>
+                <div class="product-price">$24.99</div>
+                <br>
+                <a href="#" class="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true">Compraquí</a>
+            </div>
+
         </div>
     </div>
+    <br>
+
 
     <!--Whatsapp boton flotante-->
     <aside>
@@ -159,8 +150,9 @@
     </aside>
 
     <!--maps-->
-    <h2>Estamos ubicados en</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.946348534932!2d-70.65299372487614!3d-33.45070429752415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50bf1a3ed37%3A0xdc6f279bdf3346c3!2sSan%20Diego%20408%2C%208330487%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1697856338991!5m2!1ses-419!2scl" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <h2>ESTAMOS UBICADOS EN</h2>
+    <p>San diego 408, Santiago, Region Metropolitana</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.946348534932!2d-70.65299372487614!3d-33.45070429752415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c50bf1a3ed37%3A0xdc6f279bdf3346c3!2sSan%20Diego%20408%2C%208330487%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1697856338991!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     <!--Footer-->
     <br>
@@ -188,6 +180,7 @@
                 <p><img src="../img/icons/creditcard.png" alt="tarjetas"> Tarjetas</p>
                 <p><img src="../img/icons/transfer.png" alt="transferencia"> Transferencias</p>
             </div>
+            <br>
         </div>
         <br>
         <p>&copy; 2023 NetlandPc. Todos los derechos reservados.</p>
@@ -195,6 +188,15 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            items: 1
+        });
+    </script>
 </body>
 </html>
