@@ -140,9 +140,8 @@ blockquote {
 }
 
 .product {
-    background-color: #f8f9fa;
-    border: 1px solid #ff8212;
-    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
 }
@@ -150,7 +149,6 @@ blockquote {
 .product img {
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
 }
 
 .product-title {
@@ -159,7 +157,7 @@ blockquote {
 }
 
 .product-price {
-    color: #ff8212;
+    color: #e44d26;
     font-weight: bold;
 }
 
@@ -244,13 +242,6 @@ footer p {
 
 /* Estilos adicionales para dispositivos móviles */
 @media (max-width: 768px) {
-    .footer-information {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
     .grid {
         grid-template-columns: 1fr; /* Cambiamos a una sola columna en dispositivos móviles */
     }
