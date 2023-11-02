@@ -158,6 +158,10 @@ blockquote {
     margin: 10px 0;
 }
 
+.product-title {
+    margin: 0px;
+}
+
 .product-price {
     color: #ff8212;
     font-weight: bold;
